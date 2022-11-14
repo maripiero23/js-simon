@@ -50,8 +50,20 @@ setTimeout(function(){
 
     }
 
-    // const userNumberEl = document.querySelector("user-numbers");
-    // userNumberEl.innerHTML = numeriUtente;
+         const userNumberEl = document.querySelector(".user-numbers");
+        userNumberEl.innerHTML = numeriUtente;
+
+        casualeEl.classList.remove("d-none");
+
+
+        function trovaNumeri(){
+            const trovatiNum = [];
+            for( i = 0, i<numeriRandom.length, i++){
+                if(numeriUtente.includes(numeriRandom[i]))
+                trovatiNum.push(numeriRandom[i])
+            }
+        }
+
     
 
 }, 6000)
