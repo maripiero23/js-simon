@@ -1,10 +1,7 @@
-// const  numeriRandom = [];
-// const  numeriUtente = [];
-// const  numeriTrovati = [];
-
-
 
 const numeriRandom = [];
+const numeriUtente = [];
+const  numeriTrovati = [];
 
 
 let pippo = numeriRandom;
@@ -21,6 +18,9 @@ while( numeriRandom.length < 5){
     console.log(numeriRandom);
 
 
+    
+
+
 
     
 }
@@ -35,3 +35,34 @@ function displayVanish(){
 
     casualeEl.classList.add("d-none");
 }
+
+
+
+
+
+
+setTimeout(function(){
+    for (let i = 0; i < 5; i++) {
+        const numU = parseInt(prompt("inserire i numeri"));
+
+        numeriUtente.push(numU);
+        console.log(numeriUtente);
+
+    }
+
+    // const userNumberEl = document.querySelector("user-numbers");
+    // userNumberEl.innerHTML = numeriUtente;
+    
+
+}, 6000)
+
+
+
+
+
+
+
+
+
+
+
